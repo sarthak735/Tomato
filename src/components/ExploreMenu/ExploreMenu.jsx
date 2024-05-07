@@ -4,7 +4,7 @@ import { menu_list } from '../../assets/assets'
 const ExploreMenu = ({category, setCategory}) => {
     // const[foodcategory, setFoodCategory] = useState("");
   return (
-    <div className=' flex flex-col gap-[20px]'>
+    <div className=' flex flex-col gap-[20px]' id='explore-menu'>
       <h1 className=' text-[#262626] font-medium text-[30px]'>Explore our menu</h1>
       <p className=' max-w-[60%] text-neutral-800 font-normal'>Choose froma diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culnary expertise. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
       <div className=' flex justify-between items-center gap-[30px] text-center my-[20px] mx-[0px] overflow-x-scroll no-scrollbar'>
