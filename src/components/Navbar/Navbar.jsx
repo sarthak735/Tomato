@@ -24,7 +24,7 @@ const Navbar = ({setShowLogin}) => {
         <img src={assets.search_icon} alt=''/>
         <div className=' relative'>
             <Link to="/cart"><img src={assets.basket_icon} alt=''/></Link>
-            <div className={` getTotal ===0?"": ${dot}`}></div>
+            <div className={getTotalCartAmount() ===0?"": `${dot}`}></div>
         </div>
         <button onClick={() => setShowLogin(true)} className=' bg-transparent text-[16px] text-[#49557e] border-solid border-[1px] border-[tomato] py-[10px] px-[30px] rounded-[50px] cursor-pointer hover:bg-[#fff4f2] transition'>Sign in</button>
       </div>
