@@ -19,10 +19,16 @@ export default {
 			},
     },
   },
+  variants: {
+    extend: {
+        display: ["group-hover"],
+    },
+},
   plugins: [
     plugin(function({ addVariant }){
       addVariant("activee", ".activee &");
     })
   ],
+
 }
 
