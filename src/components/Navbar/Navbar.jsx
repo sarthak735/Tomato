@@ -39,7 +39,7 @@ const Navbar = ({setShowLogin}) => {
         :<div className=' relative group '>
             <img src={assets.profile_icon} alt="" />
             <ul className=' absolute hidden group-hover:block right-0 z-[1] group-hover:flex-col group-hover:gap-[10px] group-hover:bg-[#fff2ef] group-hover:py-[12px] group-hover:px-[25px] group-hover:rounded-[4px] group-hover:border group-hover:border-solid group-hover:border-[tomato] group-hover:outline-[2px] group-hover:outline group-hover:outline-white group-hover:list-none '>
-              <li className=' flex items-center gap-[10px] px-[20px] pl-0 pb-[4px] cursor-pointer hover:text-[tomato] '><img src={assets.bag_icon} alt="" className=' w-[20px] '/><p>Orders</p></li>
+              <li onClick={() => navigate("/myorders")} className=' flex items-center gap-[10px] px-[20px] pl-0 pb-[4px] cursor-pointer hover:text-[tomato] '><img src={assets.bag_icon} alt="" className=' w-[20px] '/><p>Orders</p></li>
               <hr />
               <li onClick={logout} className=' flex items-center gap-[10px] px-[20px] pl-0 pb-[4px] cursor-pointer hover:text-[tomato]'><img src={assets.logout_icon} alt="" className=' w-[20px] '/><p>Logout</p></li>
             </ul>
