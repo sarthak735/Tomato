@@ -40,7 +40,7 @@ const Cart = () => {
           
         })}
       </div>
-      <div className=' mt-[80px] flex justify-between gap-[max(12vw,20px)] '>
+      <div className=' mt-[80px] flex justify-between gap-[max(12vw,20px)] max-[750px]:flex-col-reverse '>
         <div className=' flex-1 flex flex-col gap-[20px] '>
           <h2>Cart Total</h2>
           <div>
@@ -62,7 +62,7 @@ const Cart = () => {
           <button onClick={() => navigate('/order')} className=' border-none text-white bg-[tomato] w-[max(15vw,200px)] py-[12px] rounded-[4px] cursor-pointer '>PROCEED TO CHECKOUT</button>
         </div>
         <div className=' flex-1'>
-          <div>
+          <div className=' max-[750px]:justify-start'>
             <p className=' text-[#555] '>If you have a promo code, Enter it here</p>
             <div className=' mt-[10px] flex justify-between items-center bg-[#eaeaea] rounded-[4px] '>
               <input type="text" placeholder='promo code' className=' bg-transparent border-none outline-none pl-[10px] '/>
