@@ -7,7 +7,7 @@ const Footer = () => {
       className=" text-[#d9d9d9] bg-[#323232] flex flex-col items-center gap-[20px] py-[20px] px-[8vw] pt-[80px] mt-[100px]"
       id="footer"
     >
-      <div className=" w-[100%] grid grid-cols-[2fr_1fr_1fr] gap-[80px] ">
+      <div className=" max-[750px]:flex max-[750px]:flex-col max-[750px]:gap-[35px] w-[100%] grid grid-cols-[2fr_1fr_1fr] gap-[80px]  ">
         <div className=" flex flex-col items-start gap-[20px] ">
           <img src={assets.logo} alt="" />
           <p>
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className=" w-[100%] h-[2px] my-[20px] mx-[0px] border-none bg-gray-500 " />
-      <p>Copyright 2024 © Tomato.com - All Right Reserved.</p>
+      <p className="max-[750px]:text-center">Copyright 2024 © Tomato.com - All Right Reserved.</p>
     </div>
   );
 };
