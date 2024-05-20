@@ -61,7 +61,7 @@ const PlaceOrder = () => {
   },[token])
 
   return (
-    <form onSubmit={placeOrder} className=' flex items-start justify-between gap-[50px] mt-[100px] '>
+    <form onSubmit={placeOrder} className=' flex items-start justify-between gap-[50px] mt-[100px] max-[900px]:gap-[30px] '>
       <div className=' w-[100%] max-w-[max(30%,500px)] '>
         <p className=' text-[30px] font-semibold mb-[50px] '>Delivery Information</p>
         <div className=' flex gap-[10px] '>
